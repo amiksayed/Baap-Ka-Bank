@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main section div{
+    grid-column: auto / span 2;
+}
+
+main section .deposit, main section .withdraw{
+    grid-column: auto / span 3;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="login.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="my-12">
+      <h1 class="text-6xl text-center">
+        Welcome to <span class="text-orange-400">Abbur bank</span>
+      </h1>
+    </header>
+
+    <main>
+      <section id="login-container" class="w-1/2 mx-auto">
+        <h3 class="w-1/2 mx-auto mb-4">Please Login</h3>
+
+        <form id="form" class="w-1/2 mx-auto">
+          <input
+            class="border-solid border-2 border-black w-full"
+            type="email"
+            name="email"
+            required
+          /><br />
+          <input
+            class="border-solid border-2 border-black w-full mt-4"
+            type="password"
+            name="password"
+            required
+          /><br />
+          <input
+            class="border-solid border-2 border-black w-full mt-4 bg-orange-400 text-white"
+            type="submit"
+            name="submit"
+          />
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

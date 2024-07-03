@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Baap er bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="banking.js"></script>
+  </head>
+  <body class="flex flex-col justify-center items-center h-screen">
+    <header>
+      <h1 class="text-center text-6xl font-semibold text-gray-500">
+        Welcome To <span class="text-[#153448]">Baap er Bank</span>
+      </h1>
+    </header>
+    <main class="mt-20 w-[70%] h-[70%]">
+      <section class="grid grid-cols-6 gap-x-6 h-full">
+
+        <!-- 
+          ! deposited amount 
+        -->
+        <div class="h-[85%] flex items-center pl-5 bg-[#3C5B6F] col-span-2 rounded-xl">
+          <p class="font-medium text-3xl text-white">Deposit Amount: <br />$<span id="deposited-amount">00</span></p>
+        </div>
+
+        <!--
+          ! Withdraw-amount 
+        -->
+        <div class="h-[85%] flex items-center pl-5 bg-[#948979] col-span-2 rounded-xl ">
+          <p class="font-medium text-3xl text-white">Withdraw Amount: <br />$<span id="withdrawed-amount">00</span></p>
+        </div>
+
+        <!--
+          ! balance amount 
+        -->
+        <div class="h-[85%] flex items-center pl-5 bg-[#bda784] col-span-2 rounded-xl">
+          <p class="font-medium text-3xl text-white">Balance Amount: <br />$<span id="balance-amount">00</span></p>
+        </div>
+
+        <!-- 
+          ! deposit input container
+        -->
+        <div class="pl-5 flex flex-col justify-center bg-[#153448] col-span-3 rounded-xl">
+          <p class="font-medium text-4xl text-white">Deposit :</p> <br>
+          <input id="deposit-input" type="number"  class="w-[70%] h-[40px] hover:bg-white focus:bg-white focus:outline-none rounded-md pl-4 bg-sky-200 transition-all duration-300">
+
+          <p id="deposit-error-container" class="text-white my-2"></p>
+
+
+          <button  id="deposit-button" class="bg-slate-500 text-white transition-all duration-300 hover:bg-white hover:text-black w-[25%] h-[40px] rounded-md font-medium ">Deposit</button>
+        </div>
+
+        <!-- 
+          ! withdraw input container
+        -->
+        <div class="pl-5 flex flex-col justify-center bg-[#153448] col-span-3 rounded-xl">
+          <p class="font-medium text-4xl text-white">Withdraw :</p> <br>
+          <input id="withdraw-input" type="number" class="w-[70%] h-[40px] rounded-md pl-4 hover:bg-white focus:outline-none focus:bg-white bg-sky-200 transition-all duration-300">
+
+          <p id="withdraw-error-container" class="text-white my-2"></p>
+
+
+          <button id="withdraw-button" class="bg-slate-500 text-white hover:bg-white hover:text-black w-[25%] h-[40px] rounded-md font-medium transition-all duration-300">Withdraw</button>
+        </div>
+
+      </section>
+    </main>
+  </body>
+</html>
